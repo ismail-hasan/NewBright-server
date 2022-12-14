@@ -33,9 +33,18 @@ async function run() {
         //one  product data 
         app.get('/products/:id', async (req, res) => {
             const id = req.params.id
-            console.log(id)
             const query = { _id: ObjectId(id) }
             const result = await productCollection.findOne(query)
+            console.log(result.category)
+            res.send(result)
+        })
+
+        // query by category 
+        app.get("/product", async (req, res) => {
+            const cata = req.query.category
+            console.log(cata)
+            const query = { category: cata }
+            const result = await productCollection.find(query).toArray()
             res.send(result)
         })
 
