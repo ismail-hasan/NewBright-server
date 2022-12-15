@@ -19,6 +19,7 @@ async function run() {
 
     const productCollection = client.db('brightProducts').collection('allBrightProducts')
     const blogCollection = client.db('brightBlog').collection('allBrightBlogs')
+    const cartCollection = client.db('brightCart').collection('allBrightCartProducts')
 
     try {
 
@@ -42,9 +43,24 @@ async function run() {
         // query by category 
         app.get("/product", async (req, res) => {
             const cata = req.query.category
-            console.log(cata)
             const query = { category: cata }
             const result = await productCollection.find(query).toArray()
+            res.send(result)
+        })
+
+        // data get by client side cart data
+        app.post('/cart', async (req, res) => {
+            const body = req.body
+            console.log(body)
+            const result = await cartCollection.insertOne(body)
+            res.send(result)
+        })
+
+        // get cart product data in databases 
+
+        app.get('/cart', async (req, res) => {
+            const query = {}
+            const result = await cartCollection.find(query).toArray()
             res.send(result)
         })
 
