@@ -11,7 +11,6 @@ app.use(express.json())
 
 // MongoDB setup 
 const uri = `mongodb+srv://${process.env.USER_NAME}:${process.env.USER_PASSWORD}@cluster0.w4v9v80.mongodb.net/?retryWrites=true&w=majority`;
-console.log(uri)
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 
@@ -63,6 +62,45 @@ async function run() {
             const result = await cartCollection.find(query).toArray()
             res.send(result)
         })
+
+        /* //
+        // wishlist data api  start
+        // */
+
+        app.put('/wishlist/:id', async (req, res) => {
+            const id = req.params.id
+            console.log(id)
+            const query = { _id: ObjectId(id) }
+            const options = { upsert: true };
+            const updateDoc = {
+                $set: {
+                    wishlist: true
+                },
+            };
+            const result = await productCollection.updateOne(query, updateDoc, options)
+            res.send(result)
+        })
+
+        /* //
+        // wishlist data api  end
+        // */
+
+
+        /* //
+        // register data api  start
+        // */
+
+        app.post('/register', async (req, res) => {
+            const body = req.body
+            console.log(body)
+            // const result = await cartCollection.insertOne(body)
+            // res.send(result)
+        })
+
+
+        /* //////////////
+        // register data api  end
+        /////////////////
 
         /* //
         // blog data api  start
