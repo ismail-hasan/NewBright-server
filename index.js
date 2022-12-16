@@ -57,24 +57,46 @@ async function run() {
 
         // get cart product data in databases 
 
-        app.get('/cart', async (req, res) => {
+        app.get('/carts', async (req, res) => {
             const query = {}
             const result = await cartCollection.find(query).toArray()
             res.send(result)
         })
 
+        // cart query by email
+
+        app.get("/cart", async (req, res) => {
+            const email = req.query.email
+            const query = { email: email }
+            const reslut = await cartCollection.find(query).toArray()
+            res.send(reslut)
+        })
+
+
+
+
         /* //
         // wishlist data api  start
         // */
 
-        app.put('/wishlist/:id', async (req, res) => {
+        app.get('/wishlists', async (req, res) => {
+            const query = { wishlist: true }
+            const result = await productCollection.find(query).toArray()
+            res.send(result)
+        })
+
+
+
+        app.put('/wishlists/:id', async (req, res) => {
+            const email = req.body.email
+            console.log("fg", email)
             const id = req.params.id
-            console.log(id)
             const query = { _id: ObjectId(id) }
             const options = { upsert: true };
             const updateDoc = {
                 $set: {
-                    wishlist: true
+                    wishlist: true,
+                    email
                 },
             };
             const result = await productCollection.updateOne(query, updateDoc, options)
