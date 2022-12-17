@@ -7,98 +7,134 @@
     "stock": 20,
     "ratings": 4,
     "ratingsCount": 3725,
-    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
+    "productImg": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
     "shipping": 1,
     "quantity": 0,
-    "thumImg": [
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2cee64414e1f4f31baf1ae270099d950_9366/Lunar_New_Year_Ultraboost_DNA_Shoes_Black_GZ6074_01_standard.jpg",
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/69cbc73d0cb846889f89acbb011e68cb_9366/Supernova_Shoes_Black_S42722_01_standard.jpg",
-      "https://i.ibb.co/rxHMpwQ/pexels-adam-sondel-1466609.jpg"
+    "authorImg": [
+      {
+        "img1": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "img1": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "img1": "https://images.unsplash.com/photo-1543872084-c7bd3822856f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      }
     ]
   },
   {
     "category": "shirt",
-    "name": "men's half",
+    "name": "women's half",
     "seller": "Addidas",
     "price": 420,
     "stock": 20,
     "ratings": 4,
     "ratingsCount": 3725,
-    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
+    "productImg": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
     "shipping": 1,
     "quantity": 0,
-    "thumImg": [
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2cee64414e1f4f31baf1ae270099d950_9366/Lunar_New_Year_Ultraboost_DNA_Shoes_Black_GZ6074_01_standard.jpg",
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/69cbc73d0cb846889f89acbb011e68cb_9366/Supernova_Shoes_Black_S42722_01_standard.jpg",
-      "https://i.ibb.co/rxHMpwQ/pexels-adam-sondel-1466609.jpg"
+    "authorImg": [
+      {
+        "img1": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "img1": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "img1": "https://images.unsplash.com/photo-1543872084-c7bd3822856f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      }
     ]
   },
   {
     "category": "pant",
-    "name": "menn's half",
+    "name": "no man's half",
     "seller": "apex",
     "price": 4420,
     "stock": 20,
     "ratings": 4,
     "ratingsCount": 3725,
-    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
+    "productImg": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
     "shipping": 1,
     "quantity": 0,
-    "thumImg": [
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2cee64414e1f4f31baf1ae270099d950_9366/Lunar_New_Year_Ultraboost_DNA_Shoes_Black_GZ6074_01_standard.jpg",
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/69cbc73d0cb846889f89acbb011e68cb_9366/Supernova_Shoes_Black_S42722_01_standard.jpg",
-      "https://i.ibb.co/rxHMpwQ/pexels-adam-sondel-1466609.jpg"
+    "authorImg": [
+      {
+        "img1": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "img1": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "img1": "https://images.unsplash.com/photo-1543872084-c7bd3822856f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      }
     ]
   },
   {
     "category": "pant",
-    "name": "menn's half way",
+    "name": "baba go's half way",
     "seller": "apex",
     "price": 20,
     "stock": 20,
     "ratings": 4,
     "ratingsCount": 3725,
-    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
+    "productImg": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
     "shipping": 1,
     "quantity": 0,
-    "thumImg": [
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2cee64414e1f4f31baf1ae270099d950_9366/Lunar_New_Year_Ultraboost_DNA_Shoes_Black_GZ6074_01_standard.jpg",
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/69cbc73d0cb846889f89acbb011e68cb_9366/Supernova_Shoes_Black_S42722_01_standard.jpg",
-      "https://i.ibb.co/rxHMpwQ/pexels-adam-sondel-1466609.jpg"
+    "authorImg": [
+      {
+        "img1": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "img1": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "img1": "https://images.unsplash.com/photo-1543872084-c7bd3822856f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      }
     ]
   },
   {
     "category": "lungi",
-    "name": "menn's half way",
+    "name": "code vlo nha's way",
     "seller": "apace",
     "price": 20,
     "stock": 20,
     "ratings": 4,
     "ratingsCount": 3725,
-    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
+    "productImg": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
     "shipping": 1,
     "quantity": 0,
-    "thumImg": [
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2cee64414e1f4f31baf1ae270099d950_9366/Lunar_New_Year_Ultraboost_DNA_Shoes_Black_GZ6074_01_standard.jpg",
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/69cbc73d0cb846889f89acbb011e68cb_9366/Supernova_Shoes_Black_S42722_01_standard.jpg",
-      "https://i.ibb.co/rxHMpwQ/pexels-adam-sondel-1466609.jpg"
+    "authorImg": [
+      {
+        "img1": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "img1": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "img1": "https://images.unsplash.com/photo-1543872084-c7bd3822856f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      }
     ]
   },
   {
     "category": "lungi",
-    "name": "menn's half way",
+    "name": "broing's half way",
     "seller": "apace",
     "price": 20,
     "stock": 20,
     "ratings": 4,
     "ratingsCount": 3725,
-    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
+    "productImg": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
     "shipping": 1,
     "quantity": 0,
-    "thumImg": [
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2cee64414e1f4f31baf1ae270099d950_9366/Lunar_New_Year_Ultraboost_DNA_Shoes_Black_GZ6074_01_standard.jpg",
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/69cbc73d0cb846889f89acbb011e68cb_9366/Supernova_Shoes_Black_S42722_01_standard.jpg",
-      "https://i.ibb.co/rxHMpwQ/pexels-adam-sondel-1466609.jpg"
+    "authorImg": [
+      {
+        "img1": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "img1": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "img1": "https://images.unsplash.com/photo-1543872084-c7bd3822856f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2l0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+      }
     ]
   }
 ]

@@ -19,6 +19,7 @@ async function run() {
     const productCollection = client.db('brightProducts').collection('allBrightProducts')
     const blogCollection = client.db('brightBlog').collection('allBrightBlogs')
     const cartCollection = client.db('brightCart').collection('allBrightCartProducts')
+    const wishListCollection = client.db('brightWishList').collection('allBrightWishList')
 
     try {
 
@@ -35,7 +36,6 @@ async function run() {
             const id = req.params.id
             const query = { _id: ObjectId(id) }
             const result = await productCollection.findOne(query)
-            console.log(result.category)
             res.send(result)
         })
 
@@ -47,7 +47,11 @@ async function run() {
             res.send(result)
         })
 
+
+        // cart api start 
         // data get by client side cart data
+        /////////////////////////////////////
+
         app.post('/cart', async (req, res) => {
             const body = req.body
             console.log(body)
@@ -56,15 +60,13 @@ async function run() {
         })
 
         // get cart product data in databases 
-
-        app.get('/carts', async (req, res) => {
-            const query = {}
-            const result = await cartCollection.find(query).toArray()
-            res.send(result)
-        })
+        // app.get('/carts', async (req, res) => {
+        //     const query = {}
+        //     const result = await cartCollection.find(query).toArray()
+        //     res.send(result)
+        // })
 
         // cart query by email
-
         app.get("/cart", async (req, res) => {
             const email = req.query.email
             const query = { email: email }
@@ -72,18 +74,36 @@ async function run() {
             res.send(reslut)
         })
 
-
-
+        app.delete('/deletecart/:id', async (req, res) => {
+            const id = req.params.id
+            const query = { _id: ObjectId(id) }
+            const result = await cartCollection.deleteOne(query)
+            res.send(result)
+        })
 
         /* //
         // wishlist data api  start
         // */
 
         app.get('/wishlists', async (req, res) => {
-            const query = { wishlist: true }
+            const email = req.query.email
+            const query = { email: email }
             const result = await productCollection.find(query).toArray()
             res.send(result)
         })
+
+        // app.get('/wishlists', async (req, res) => {
+        //     const query = { wishlist: true }
+        //     const result = await productCollection.find(query).toArray()
+        //     res.send(result)
+        // })
+
+        // app.delete('/deletewish/:id', async (req, res) => {
+        //     const id = req.params.id
+        //     const query = { _id: ObjectId(id) }
+        //     const result = await productCollection.deleteOne(query)
+        //     res.send(result)
+        // })
 
 
 
@@ -123,7 +143,7 @@ async function run() {
         /* //////////////
         // register data api  end
         /////////////////
-
+    
         /* //
         // blog data api  start
         // */
@@ -132,6 +152,12 @@ async function run() {
             const query = {}
             const result = await blogCollection.find(query).toArray()
             res.send(result)
+        })
+
+        app.get('/limitbLog', async (req, res) => {
+            const query = {}
+            const cursor = await blogCollection.find(query).limit(4).toArray()
+            res.send(cursor)
         })
 
         app.get('/blogs/:id', async (req, res) => {
