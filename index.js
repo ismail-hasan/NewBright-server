@@ -19,6 +19,7 @@ async function run() {
     const productCollection = client.db('brightProducts').collection('allBrightProducts')
     const blogCollection = client.db('brightBlog').collection('allBrightBlogs')
     const cartCollection = client.db('brightCart').collection('allBrightCartProducts')
+    const reviewCollection = client.db('brighReview').collection('allBrightReviewProducts')
     const wishListCollection = client.db('brightWishList').collection('allBrightWishList')
 
     try {
@@ -50,7 +51,6 @@ async function run() {
 
         // cart api start 
         // data get by client side cart data
-        /////////////////////////////////////
 
         app.post('/cart', async (req, res) => {
             const body = req.body
@@ -60,11 +60,11 @@ async function run() {
         })
 
         // get cart product data in databases 
-        // app.get('/carts', async (req, res) => {
-        //     const query = {}
-        //     const result = await cartCollection.find(query).toArray()
-        //     res.send(result)
-        // })
+        app.get('/allcarts', async (req, res) => {
+            const query = {}
+            const result = await cartCollection.find(query).toArray()
+            res.send(result)
+        })
 
         // cart query by email
         app.get("/cart", async (req, res) => {
@@ -98,12 +98,12 @@ async function run() {
         //     res.send(result)
         // })
 
-        // app.delete('/deletewish/:id', async (req, res) => {
-        //     const id = req.params.id
-        //     const query = { _id: ObjectId(id) }
-        //     const result = await productCollection.deleteOne(query)
-        //     res.send(result)
-        // })
+        app.delete('/deletewish/:id', async (req, res) => {
+            const id = req.params.id
+            const query = { _id: ObjectId(id) }
+            const result = await productCollection.deleteOne(query)
+            res.send(result)
+        })
 
 
 
@@ -126,6 +126,34 @@ async function run() {
         /* //
         // wishlist data api  end
         // */
+
+
+        /* //
+        // review data api  start
+        // */
+
+
+        // review post api 
+        app.post('/review', async (req, res) => {
+            const body = req.body
+            const reslut = await reviewCollection.insertOne(body)
+            res.send(reslut)
+        })
+
+        // review get api 
+        app.get("/review", async (req, res) => {
+            const query = {}
+            const result = await reviewCollection.find(query).toArray()
+            res.send(result)
+        })
+
+
+        /* //
+          // review data api  end
+          // */
+
+
+
 
 
         /* //
