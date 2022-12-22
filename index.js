@@ -54,7 +54,6 @@ async function run() {
 
         app.post('/cart', async (req, res) => {
             const body = req.body
-            console.log(body)
             const result = await cartCollection.insertOne(body)
             res.send(result)
         })
@@ -85,43 +84,45 @@ async function run() {
         // wishlist data api  start
         // */
 
-        app.get('/wishlists', async (req, res) => {
+        app.post('/wish', async (req, res) => {
+            const body = req.body
+            console.log(body)
+            const result = await wishListCollection.insertOne(body)
+            res.send(result)
+        })
+
+        app.get('/wish', async (req, res) => {
             const email = req.query.email
             const query = { email: email }
-            const result = await productCollection.find(query).toArray()
+            const result = await wishListCollection.find(query).toArray()
             res.send(result)
         })
 
-        // app.get('/wishlists', async (req, res) => {
-        //     const query = { wishlist: true }
-        //     const result = await productCollection.find(query).toArray()
+        app.delete('/wishdelete/:id', async (req, res) => {
+            const id = req.params.id
+            console.log("hello", id)
+            const query = { mainId: id }
+            const result = await wishListCollection.deleteOne(query)
+            res.send(result)
+        })
+
+
+
+        // app.put('/wishlists/:id', async (req, res) => {
+        //     const email = req.body.email
+        //     console.log("fg", email)
+        //     const id = req.params.id
+        //     const query = { _id: ObjectId(id) }
+        //     const options = { upsert: true };
+        //     const updateDoc = {
+        //         $set: {
+        //             wishlist: true,
+        //             email
+        //         },
+        //     };
+        //     const result = await productCollection.updateOne(query, updateDoc, options)
         //     res.send(result)
         // })
-
-        app.delete('/deletewish/:id', async (req, res) => {
-            const id = req.params.id
-            const query = { _id: ObjectId(id) }
-            const result = await productCollection.deleteOne(query)
-            res.send(result)
-        })
-
-
-
-        app.put('/wishlists/:id', async (req, res) => {
-            const email = req.body.email
-            console.log("fg", email)
-            const id = req.params.id
-            const query = { _id: ObjectId(id) }
-            const options = { upsert: true };
-            const updateDoc = {
-                $set: {
-                    wishlist: true,
-                    email
-                },
-            };
-            const result = await productCollection.updateOne(query, updateDoc, options)
-            res.send(result)
-        })
 
         /* //
         // wishlist data api  end
