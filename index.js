@@ -86,7 +86,6 @@ async function run() {
 
         app.post('/wish', async (req, res) => {
             const body = req.body
-            console.log(body)
             const result = await wishListCollection.insertOne(body)
             res.send(result)
         })
@@ -100,9 +99,12 @@ async function run() {
 
         app.delete('/wishdelete/:id', async (req, res) => {
             const id = req.params.id
-            console.log("hello", id)
             const query = { mainId: id }
             const result = await wishListCollection.deleteOne(query)
+            if (id === query) {
+                res.send("already added")
+                console.log("dfsf")
+            }
             res.send(result)
         })
 
@@ -163,7 +165,6 @@ async function run() {
 
         app.post('/register', async (req, res) => {
             const body = req.body
-            console.log(body)
             // const result = await cartCollection.insertOne(body)
             // res.send(result)
         })
